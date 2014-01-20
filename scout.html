@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smashing HTML5!</title>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/sample.css" />
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="javascripts/sample.js"></script>
+  </head>
+  <body>
+
+    <table id="players">
+        <tr>
+            <th>Player Name</th><th>Rank</th><th>Schools of Interest</th>
+        </tr>
+        <tbody class="player-list">
+        </tbody>
+    </table>
+
+    <script>
+        function showMePlayers(){
+
+            var examplePlayer = [{"name": "Joe", "rank": 1, "schools": ["Washington", "USC", "Stanford"]}];
+
+            //var players = getPlayers();
+
+            $.each(examplePlayer, function(p,player){
+                schools = [];
+                players = [];
+                var playerRow = "<tr><td class='player-id-" + p + "'><td>" + player.name + "</td><td>" + player.rank + "</td><td><ul class='schools'>" + schools + "</ul></td></tr>"
+                players.push(playerRow);
+                $(".player-list").append(players);
+                $.each(player.schools, function(s,school){
+                    schools.push("<li>" + school + "</li>");
+                });
+                $(".schools").append(schools);
+            });
+        }
+        showMePlayers();
+    </script>
+    </body>
+</html>
