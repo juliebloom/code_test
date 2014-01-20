@@ -1,0 +1,57 @@
+/* line 1, sample.sass */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* line 5, sample.sass */
+.vmm {
+  margin: 10px 0;
+}
+
+/* line 8, sample.sass */
+.hmm {
+  margin: 0px 10px;
+}
+
+/* line 11, sample.sass */
+.vmp {
+  padding: 10px 0;
+}
+
+/* line 14, sample.sass */
+.hmp {
+  padding: 0 10px;
+}
+
+/* line 18, sample.sass */
+.col-md-3.draggable {
+  position: static;
+}
+
+/* line 21, sample.sass */
+.list-group-item {
+  border: 0;
+}
+
+/* line 24, sample.sass */
+div[class*='-draggable'], div[class*='selected-'] {
+  min-height: 200px;
+}
+/* line 26, sample.sass */
+div[class*='-draggable'] .btn, div[class*='selected-'] .btn {
+  width: 120px;
+}
+
+/* line 29, sample.sass */
+.box {
+  min-height: 220px;
+  border-radius: 0.25em;
+  border: 1px solid #428bca;
+}
+/* line 33, sample.sass */
+.box .heading {
+  background-color: #428bca;
+  color: white;
+  padding: 8px 10px;
+}

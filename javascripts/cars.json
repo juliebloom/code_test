@@ -1,0 +1,99 @@
+{ 
+	"cars":
+	[
+		{
+			"brand_id": "1",
+			"brand_title": "Audi",
+			"styles": [
+				{
+					"style_id": "1",
+					"style_title": "Coupe",
+					"models": [
+						{ "title": "Audi TT"},
+						{ "title": "Audi 4"},
+						{ "title": "Audi 5"},
+						{ "title": "Audi 6"},
+						{ "title": "Audi 7"},
+						{ "title": "Audi 8"}
+					]
+				},
+				{
+					"style_id": "3",
+					"style_title": "Sports Car",
+					"models": [
+						{ "title": "Audi TT", "coupe": true},
+						{ "title": "Audi R8", "coupe": true}
+					]
+				}
+			]	
+		},
+		{
+			"brand_id": "2",
+			"brand_title": "Chevy",
+			"styles": [
+				{
+					"style_id": "1",
+					"style_title": "Coupe",
+					"models": [
+						{ "title": "Chevy Malibu"},
+						{ "title": "Chevy Volt"},
+						{ "title": "Chevy Impala"}
+					]
+				},
+				{
+					"style_id": "3",
+					"style_title": "Sports Car",
+					"models": [
+						{ "title": "Chevy Corvette", "coupe": true},
+						{ "title": "Chevy Camero", "coupe": true}
+					]
+				}
+			]	
+		},
+		{
+			"brand_id": "3",
+			"brand_title": "Ford",
+			"styles": [
+				{
+					"style_id": "1",
+					"style_title": "Coupe",
+					"models": [
+						{ "title": "Ford Escort", "coupe": true},
+						{ "title": "Ford Mustang", "coupe": true}
+					]
+				},
+				{
+					"style_id": "3",
+					"style_title": "Sports Car",
+					"models": [
+						{ "title": "Ford Mustang", "coupe": true}
+					]
+				}
+			]	
+		},
+		{
+			"brand_id": "4",
+			"brand_title": "Porsche",
+			"styles": [
+				{
+					"style_id": "1",
+					"style_title": "Coupe",
+					"models": [
+						{"title": "Porsche 911"}, 
+						{"title": "Porsche Boxster"},
+						{"title": "Porsche Panamera"}
+					]
+				},
+				{
+					"style_id": "3",
+					"style_title": "Sports Car",
+					"models": [
+						{"title": "Porsche 911", "coupe": true}, 
+						{"title": "Porsche Boxster", "coupe": true},
+						{"title": "Porsche Panamera", "coupe": true}
+					]
+				}
+			]	
+		}
+	]
+}

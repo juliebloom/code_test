@@ -1,0 +1,36 @@
+body
+  background-color: #fff
+  color: #000
+
+.vmm
+  margin: 10px 0
+
+.hmm
+  margin: 0px 10px
+
+.vmp
+  padding: 10px 0
+
+.hmp
+  padding: 0 10px
+
+.col-md-3
+  &.draggable
+    position: static
+
+.list-group-item
+  border: 0
+
+div[class*='-draggable'],div[class*='selected-']
+  min-height: 200px
+  .btn
+    width: 120px
+
+.box
+  min-height: 220px
+  border-radius: .25em
+  border: 1px solid #428bca
+  .heading
+    background-color: #428bca
+    color: #fff
+    padding: 8px 10px
