@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smashing HTML5!</title>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/sample.css" />
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="javascripts/sample.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="vmp">
+            Press the Show Models button to show all possible models for your selection.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-center brand-draggable">
+          <h4>Brands</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a class="btn btn-primary" data-brand="1">Audi</a></li>
+            <li class="list-group-item"><a class="btn btn-primary" data-brand="2">Chevy</a></li>
+            <li class="list-group-item"><a class="btn btn-primary" data-brand="3">Ford</a></li>
+            <li class="list-group-item"><a class="btn btn-primary" data-brand="4">Porsche</a></li>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="box">
+            <div class="heading">
+              <h5 class="panel-title">Choose 3 Brands</h5>
+            </div>
+            <div class="selected-brand">
+              <ul class="list-group">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="box">
+            <div class="heading">
+              <h5 class="panel-title">Choose 2 Styles</h5>
+            </div>
+            <div class="selected-style">
+              <ul class="list-group">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 text-center style-draggable">
+          <h4>Styles</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a class="btn btn-primary" data-style="1">Coupe</a></li>
+            <li class="list-group-item"><a class="btn btn-primary" data-style="2">Sedan</a></li>
+            <li class="list-group-item"><a class="btn btn-primary" data-style="3">Sports Car</a></li>
+            <li class="list-group-item"><a class="btn btn-primary" data-style="4">Sports Utility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center vmm">
+          <a class="btn btn-success btn-lg show-models">Show Models</a>
+        </div>
+      </div>
+      <div class="row vmm">
+        <p>Possible Models Are:</p>
+      </div>
+      <div class="row results">
+
+      </div>
+    </div>
+  </body>
+</html>
