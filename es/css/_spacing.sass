@@ -1,0 +1,61 @@
+$direction: top right bottom left
+$size: none xs s m l xl xxl
+$padding: 0
+$margin: 0
+
+// Key: 
+// p = padding, m = margin, h = horizontal, v = vertical, t = top, l = left, r = right, b = bottom
+// xs = small (5px), s = small (10px), m = medium (15px), l = large (20px), xl = xlarge (30px),  xxl = xxlarge (45px)
+// example: p-xs-b = padding-bottom: 5px
+
+@for $i from 1 through length($size)
+	$s: nth($size,$i)
+	$space: 5
+	@each $d in $direction
+		.p-#{$s}-#{$d} 
+			padding-#{$d}: #{$padding}px
+	$padding: ($padding + $space)
+	@if ($s == 'xl')
+		$padding: ($padding + 15)
+	@if ($s == 'xxl')
+		$padding: ($padding + 15)
+
+@for $i from 1 through length($size)
+	$s: nth($size,$i)
+	$space: 5
+	@each $d in $direction
+		.m-#{$s}-#{$d} 
+			margin-#{$d}: #{$margin}px
+	$margin: ($margin + $space)
+	@if ($s == 'xl')
+		$margin: ($margin + 15)
+	@if ($s == 'xxl')
+		$margin: ($margin + 15)
+		
+
+$list: margin padding
+
+@each $item in $list
+	@each $s in $size
+		.p-#{$s}-horz
+			@extend .p-#{$s}-left
+			@extend .p-#{$s}-right
+		.p-#{$s}-vert
+			@extend .p-#{$s}-top
+			@extend .p-#{$s}-bottom
+		.p-#{$s}
+			@extend .p-#{$s}-top
+			@extend .p-#{$s}-left
+			@extend .p-#{$s}-bottom
+			@extend .p-#{$s}-right
+		.m-#{$s}-horz
+			@extend .m-#{$s}-left
+			@extend .m-#{$s}-right
+		.m-#{$s}-vert
+			@extend .m-#{$s}-top
+			@extend .m-#{$s}-bottom
+		.m-#{$s}
+			@extend .m-#{$s}-top
+			@extend .m-#{$s}-left
+			@extend .m-#{$s}-bottom
+			@extend .m-#{$s}-right

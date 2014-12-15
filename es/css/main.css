@@ -1,0 +1,393 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,200,300);
+@import url(http://fonts.googleapis.com/css?family=Fauna+One);
+/* I used sass for css and compiled it with codekit */
+/* tried to match the fonts as best I could.  Had to do some guessing */
+/* spacing is a sass mixin file of my own I made for spacing */
+.p-none-top, .p-none-vert, .p-none {
+  padding-top: 0px; }
+
+.p-none-right, .p-none-horz, .p-none {
+  padding-right: 0px; }
+
+.p-none-bottom, .p-none-vert, .p-none {
+  padding-bottom: 0px; }
+
+.p-none-left, .p-none-horz, .p-none {
+  padding-left: 0px; }
+
+.p-xs-top, .p-xs-vert, .p-xs {
+  padding-top: 5px; }
+
+.p-xs-right, .p-xs-horz, .p-xs {
+  padding-right: 5px; }
+
+.p-xs-bottom, .p-xs-vert, .p-xs {
+  padding-bottom: 5px; }
+
+.p-xs-left, .p-xs-horz, .p-xs {
+  padding-left: 5px; }
+
+.p-s-top, .p-s-vert, .p-s {
+  padding-top: 10px; }
+
+.p-s-right, .p-s-horz, .p-s {
+  padding-right: 10px; }
+
+.p-s-bottom, .p-s-vert, .p-s {
+  padding-bottom: 10px; }
+
+.p-s-left, .p-s-horz, .p-s {
+  padding-left: 10px; }
+
+.p-m-top, .p-m-vert, .p-m {
+  padding-top: 15px; }
+
+.p-m-right, .p-m-horz, .p-m {
+  padding-right: 15px; }
+
+.p-m-bottom, .p-m-vert, .p-m {
+  padding-bottom: 15px; }
+
+.p-m-left, .p-m-horz, .p-m {
+  padding-left: 15px; }
+
+.p-l-top, .p-l-vert, .p-l {
+  padding-top: 20px; }
+
+.p-l-right, .p-l-horz, .p-l {
+  padding-right: 20px; }
+
+.p-l-bottom, .p-l-vert, .p-l {
+  padding-bottom: 20px; }
+
+.p-l-left, .p-l-horz, .p-l {
+  padding-left: 20px; }
+
+.p-xl-top, .p-xl-vert, .p-xl {
+  padding-top: 25px; }
+
+.p-xl-right, .p-xl-horz, .p-xl {
+  padding-right: 25px; }
+
+.p-xl-bottom, .p-xl-vert, .p-xl {
+  padding-bottom: 25px; }
+
+.p-xl-left, .p-xl-horz, .p-xl {
+  padding-left: 25px; }
+
+.p-xxl-top, .p-xxl-vert, .p-xxl {
+  padding-top: 45px; }
+
+.p-xxl-right, .p-xxl-horz, .p-xxl {
+  padding-right: 45px; }
+
+.p-xxl-bottom, .p-xxl-vert, .p-xxl {
+  padding-bottom: 45px; }
+
+.p-xxl-left, .p-xxl-horz, .p-xxl {
+  padding-left: 45px; }
+
+.m-none-top, .m-none-vert, .m-none {
+  margin-top: 0px; }
+
+.m-none-right, .m-none-horz, .m-none {
+  margin-right: 0px; }
+
+.m-none-bottom, .m-none-vert, .m-none {
+  margin-bottom: 0px; }
+
+.m-none-left, .m-none-horz, .m-none {
+  margin-left: 0px; }
+
+.m-xs-top, .m-xs-vert, .m-xs {
+  margin-top: 5px; }
+
+.m-xs-right, .m-xs-horz, .m-xs {
+  margin-right: 5px; }
+
+.m-xs-bottom, .m-xs-vert, .m-xs {
+  margin-bottom: 5px; }
+
+.m-xs-left, .m-xs-horz, .m-xs {
+  margin-left: 5px; }
+
+.m-s-top, .m-s-vert, .m-s {
+  margin-top: 10px; }
+
+.m-s-right, .m-s-horz, .m-s {
+  margin-right: 10px; }
+
+.m-s-bottom, .m-s-vert, .m-s {
+  margin-bottom: 10px; }
+
+.m-s-left, .m-s-horz, .m-s {
+  margin-left: 10px; }
+
+.m-m-top, .m-m-vert, .m-m {
+  margin-top: 15px; }
+
+.m-m-right, .m-m-horz, .m-m {
+  margin-right: 15px; }
+
+.m-m-bottom, .m-m-vert, .m-m {
+  margin-bottom: 15px; }
+
+.m-m-left, .m-m-horz, .m-m {
+  margin-left: 15px; }
+
+.m-l-top, .m-l-vert, .m-l {
+  margin-top: 20px; }
+
+.m-l-right, .m-l-horz, .m-l {
+  margin-right: 20px; }
+
+.m-l-bottom, .m-l-vert, .m-l {
+  margin-bottom: 20px; }
+
+.m-l-left, .m-l-horz, .m-l {
+  margin-left: 20px; }
+
+.m-xl-top, .m-xl-vert, .m-xl {
+  margin-top: 25px; }
+
+.m-xl-right, .m-xl-horz, .m-xl {
+  margin-right: 25px; }
+
+.m-xl-bottom, .m-xl-vert, .m-xl {
+  margin-bottom: 25px; }
+
+.m-xl-left, .m-xl-horz, .m-xl {
+  margin-left: 25px; }
+
+.m-xxl-top, .m-xxl-vert, .m-xxl {
+  margin-top: 45px; }
+
+.m-xxl-right, .m-xxl-horz, .m-xxl {
+  margin-right: 45px; }
+
+.m-xxl-bottom, .m-xxl-vert, .m-xxl {
+  margin-bottom: 45px; }
+
+.m-xxl-left, .m-xxl-horz, .m-xxl {
+  margin-left: 45px; }
+
+body {
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #e7c98b;
+  font-family: "Raleway", sans-serif;
+  background-color: #e7c98b; }
+
+hr {
+  margin: 5px 0;
+  border-color: inherit;
+  /* sets hr color to parent's text color */ }
+
+a, a:link, a:visited {
+  color: #935f25; }
+
+.bold {
+  font-weight: bold; }
+
+.btn-primary {
+  background-color: #e7c98b;
+  color: #935f25;
+  border-color: #e7c98b;
+  border-radius: 8px;
+  box-shadow: -1px -1px 2px #e7c98b;
+  width: 100px; }
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #deb561;
+    border-color: #deb561; }
+
+.btn-mirror {
+  width: 100px;
+  height: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.6;
+  background: -webkit-linear-gradient(#e7c98b, transparent);
+  background: -o-linear-gradient(#e7c98b, transparent);
+  background: -moz-linear-gradient(#e7c98b, transparent);
+  background: linear-gradient(#e7c98b, transparent); }
+
+.page-top {
+  background-image: url("/images/wood.png");
+  background-repeat: repeat-x;
+  background-color: #4d372a; }
+
+.tagline {
+  text-align: center;
+  font-size: 25px;
+  color: #935f25;
+  margin: 10px 0 0 0;
+  font-family: "Fauna One", serif; }
+
+header {
+  border-top: 1px #e7c98b dashed;
+  padding-top: 1px;
+  height: 70px; }
+  header .cart-nav {
+    text-align: right;
+    font-size: 16px;
+    padding: 20px 15px 0 0; }
+    header .cart-nav .glyphicon {
+      font-size: 22px; }
+
+.navbar {
+  display: none; }
+
+.nav-tabs {
+  display: block;
+  border-bottom: #faefd9; }
+  .nav-tabs > li {
+    margin: 0 5px 0 0; }
+    .nav-tabs > li a {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding: 0 10px;
+      font-size: 13px;
+      background-color: #e7c98b;
+      text-align: center;
+      width: 140px;
+      height: 45px; }
+      .nav-tabs > li a:hover {
+        background-color: #deb561;
+        border: 1px solid transparent; }
+      .nav-tabs > li a.active {
+        background-color: #faefd9;
+        border: 1px solid transparent; }
+        .nav-tabs > li a.active:hover {
+          background-color: #f4dcac;
+          border: 1px solid transparent; }
+      .nav-tabs > li a span {
+        display: inline-block;
+        line-height: 45px;
+        vertical-align: middle; }
+        .nav-tabs > li a span.long {
+          line-height: 20px; }
+    .nav-tabs > li a, .nav-tabs > li a:visited, .nav-tabs > li a:link {
+      color: #26150e; }
+
+.content {
+  width: 100%; }
+  .content .well {
+    background-color: #faefd9;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 0;
+    border-radius: 10px;
+    position: relative; }
+    .content .well.gradient-border {
+      padding: 0;
+      margin: 0 0 20px 0;
+      background-color: transparent;
+      border-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top: 1px solid #935f25;
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#935f25), to(transparent));
+      background-image: -webkit-linear-gradient(#935f25, transparent);
+      background-image: -moz-linear-gradient(#935f25, transparent), -moz-linear-gradient(#935f25, transparent);
+      background-image: -o-linear-gradient(#935f25, transparent), -o-linear-gradient(#935f25, transparent);
+      background-image: linear-gradient(#935f25, transparent), linear-gradient(#935f25, transparent);
+      -moz-background-size: 1px 100%;
+      background-size: 1px 100%;
+      background-position: 0 0, 100% 0;
+      background-repeat: no-repeat; }
+    .content .well .tab-image img {
+      height: auto;
+      width: 100%; }
+    .content .well .well-body {
+      margin: 2px 2px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: -webkit-linear-gradient(#4a3429, transparent);
+      background: -o-linear-gradient(#4a3429 n, transparent);
+      background: -moz-linear-gradient(#4a3429, transparent);
+      background: linear-gradient(#4a3429 n, transparent);
+      font-size: 11px;
+      color: #e8b652;
+      opacity: 0.6;
+      height: 275px;
+      padding: 65px 15px 0;
+      text-align: center; }
+      .content .well .well-body a, .content .well .well-body a:link, .content .well .well-body a:visited {
+        color: #e8b652; }
+    .content .well .banner-title {
+      background-color: #26150e;
+      border-top: 1px dashed #4a3429;
+      border-bottom: 1px dashed #4a3429;
+      position: absolute;
+      padding: 1px 0;
+      text-align: center;
+      font-family: "Fauna One", serif;
+      letter-spacing: -1px;
+      font-size: 20px;
+      top: 20px;
+      left: 0;
+      line-height: 30px;
+      width: 100%; }
+    .content .well .read-more {
+      position: absolute;
+      bottom: 10px;
+      left: 30%; }
+
+.footer {
+  padding: 30px 0 0 0;
+  border-top: 1px #26150e dashed;
+  background-color: #e7c98b;
+  color: #26150e;
+  font-size: 12px; }
+  .footer a, .footer a:link, .footer a:visited {
+    font-weight: bold;
+    padding: 0 10px 0 5px; }
+  .footer ul li {
+    display: inline-block; }
+    .footer ul li:after {
+      content: "|"; }
+    .footer ul li:last-child:after {
+      content: ""; }
+
+/* did not have time to do a tablet view but would like to have */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1px 15px 0 15px; }
+
+  .nav-tabs {
+    display: none; }
+
+  .navbar {
+    display: block;
+    border-radius: 8px;
+    background-color: #faefd9;
+    color: #935f25; }
+    .navbar .navbar-brand {
+      color: #935f25; }
+    .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {
+      background-color: transparent; }
+    .navbar .navbar-toggle, .navbar .navbar-collapse {
+      border-color: #e7c98b; }
+      .navbar .navbar-toggle .icon-bar, .navbar .navbar-collapse .icon-bar {
+        background-color: #e7c98b; }
+
+  .mobile-nav {
+    padding: 0; }
+    .mobile-nav ul {
+      padding: 0;
+      margin: 0; }
+    .mobile-nav li {
+      list-style-type: none;
+      padding: 5px 15px;
+      margin: 0;
+      border-bottom: 1px solid #e7c98b; }
+      .mobile-nav li:last-child {
+        border-bottom: 0; }
+
+  .footer ul {
+    margin: 0;
+    padding: 0; }
+
+  .content .well .read-more {
+    left: 35%; } }

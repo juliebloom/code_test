@@ -1,0 +1,132 @@
+<!doctype html>
+%html{:lang => ""}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %title
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css", :rel => "stylesheet"}
+    %link{:href => "css/main.css", :rel => "stylesheet"}
+  %body
+  .page-top
+    %header
+      .row
+        .col-md-offset-1.col-md-10.col-sm-offset-2.col-sm-8.col-xs-12
+          .row
+            .col-md-6.col-sm-6.col-xs-6.m-m-vert
+              %a{:href => "/", :title => "Airtex"}
+                %img{:src => "/images/logo.png", "border" => "0"}
+            .col-md-6.col-sm-6.col-xs-6.cart-nav
+              %span.glyphicon.glyphicon-shopping-cart
+              View Cart
+
+    .container.content
+      // ideally I would use the same nav so as to not have 2 versions in the page.  
+      .row
+        .col-md-offset-1.col-md-10.col-sm-offset-2.col-sm-8.col-xs-12
+          .row
+            .col-md-12.col-sm-12.col-xs-12
+              %nav.navbar.navbar-default{"role" => "navigation"}
+                .container-fluid
+                  .navbar-header
+                    %button.navbar-toggle.collapsed{"data-toggle" => "collapse", "data-target" => ".mobile-nav"}
+                      %span.icon-bar
+                      %span.icon-bar
+                      %span.icon-bar
+                    %a.navbar-brand home
+                  .collapse.navbar-collapse.mobile-nav
+                    %ul
+                      %li <a href="" class="active"><span>home</span></a>
+                      %li <a href=""><span>about us</span></a>
+                      %li <a href=""><span class="long">commerical &amp; industrial products</span></a>
+                      %li <a href=""><span class="long">retail &amp; hobby products</span></a>
+                      %li <a href=""><span>contact us</span></a>
+
+              %ul.nav.nav-tabs.m-m-left
+                %li <a href="" class="active"><span>home</span></a>
+                %li <a href=""><span>about us</span></a>
+                %li <a href=""><span class="long">commerical &amp; industrial products</span></a>
+                %li <a href=""><span class="long">retail &amp; hobby products</span></a>
+                %li <a href=""><span>contact us</span></a>
+              .well
+                .tab-image
+                  %img{:src => "/images/spotlight.png"}
+                %p.tagline
+                  When it comes from the heart, fill it with Airtex
+          .row
+            .col-md-4.col-sm-4.col-xs-12
+              .well.gradient-border
+                .well-body
+                  %p
+                    <span class="bold">Airtex Consumer Products</span> offers the crafting and quilting industries quality filling and foam products supported with exceptional customer service, backed by a solid understanding of the pride and emotion that go into the successful completion of every project.
+                .banner-title
+                  about us
+                .read-more
+                  .btn.btn-primary.btn-sm
+                    Read More
+                  .btn-mirror
+            .col-md-4.col-sm-4.col-xs-12
+              .well.gradient-border
+                .well-body
+                  .media.text-left
+                    .media-left
+                      %img{:src => "/images/tiny1.png"}
+                    .media-body
+                      %span.bold Fiberfill
+                      %p
+                        As the name implies, Airtex Premium Fiberfill polyester stuffing...
+                  %hr
+                  .media.text-left
+                    .media-left
+                      %img{:src => "/images/tiny2.png"}
+                    .media-body
+                      %span.bold Pillow Forms
+                      %p
+                        Airtex full, durable Premium Pillow Forms maintain their shape...
+
+                .banner-title
+                  products
+                .read-more
+                  .btn.btn-primary.btn-sm
+                    Read More
+                  .btn-mirror
+            .col-md-4.col-sm-4.col-xs-12
+              .well.gradient-border
+                .well-body
+                  %span.bold Mailing Address:
+                  %br
+                  150 Industrial Park Road
+                  %br
+                  Cokato, MN 55321
+                  %br
+                  %br
+                  %span.bold Phone:
+                  800 851-8887
+                  %br
+                  %span.bold Fax:
+                  320 286-2420
+                  %br
+                  %span.bold Email:
+                  %a{:mailto => "customerservice@airtex.com"}customerservice@airtex.com
+                .banner-title
+                  contact us
+                .read-more
+                  .btn.btn-primary.btn-sm
+                    Read More
+                  .btn-mirror
+
+  .footer
+    .row
+      .col-md-12.col-sm-12.col-xs-12.text-center
+        %ul
+          %li <a href="">Home</a>
+          %li <a href="">About Us</a>
+          %li <a href="">Commerical &amp; Industrial Products</a>
+          %li <a href="">Retail &amp; Hobby Products</a>
+          %li <a href="">Contact Us</a>
+        %p
+          Airtex is a <a href="">Division of Federal Foam Technologies, Inc.</a>
+
+  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"}
+  %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"}

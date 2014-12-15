@@ -1,0 +1,240 @@
+/* I used sass for css and compiled it with codekit */
+
+/* tried to match the fonts as best I could.  Had to do some guessing */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,200,300)
+@import url(http://fonts.googleapis.com/css?family=Fauna+One)
+
+/* spacing is a sass mixin file of my own I made for spacing */
+@import spacing
+
+$light-tan: #faefd9
+$dark-tan: #e7c98b
+$light-brown: #935f25
+$brown: #26150E
+$font-family: 'Raleway', sans-serif
+$font-family-secondary: 'Fauna One', serif
+
+body
+  margin: 0 auto
+  padding-top: 20px
+  font-size: 14px
+  color: $dark-tan
+  font-family: $font-family
+  background-color: $dark-tan
+
+hr
+  margin: 5px 0
+  border-color: inherit 
+  /* sets hr color to parent's text color */
+
+a, a:link, a:visited
+  color:  $light-brown
+
+.bold
+  font-weight: bold
+
+.btn-primary
+  background-color: $dark-tan
+  color: $light-brown
+  border-color: $dark-tan
+  border-radius: 8px
+  box-shadow: -1px -1px 2px $dark-tan
+  width: 100px
+  &:hover, &:focus
+    background-color: darken($dark-tan,10%)
+    border-color: darken($dark-tan,10%)
+.btn-mirror
+  width: 100px
+  height: 20px
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+  opacity: .6
+  background: -webkit-linear-gradient($dark-tan, transparent)
+  background: -o-linear-gradient($dark-tan, transparent)
+  background: -moz-linear-gradient($dark-tan, transparent)
+  background: linear-gradient($dark-tan, transparent) 
+
+.page-top
+  background-image: url('/images/wood.png')
+  background-repeat: repeat-x 
+  background-color: #4d372a
+
+.tagline
+  text-align: center
+  font-size: 25px
+  color: $light-brown
+  margin: 10px 0 0 0
+  font-family: $font-family-secondary
+
+header
+  border-top: 1px $dark-tan dashed
+  padding-top: 1px
+  height: 70px
+  .cart-nav
+    text-align: right
+    font-size: 16px
+    padding: 20px 15px 0 0
+    .glyphicon
+      font-size: 22px
+
+.navbar
+  display: none
+
+.nav-tabs
+  display: block
+  border-bottom: $light-tan
+  > li
+    margin: 0 5px 0 0
+    a
+      border-top-left-radius: 8px
+      border-top-right-radius: 8px
+      padding: 0 10px
+      font-size: 13px
+      background-color: $dark-tan
+      text-align: center
+      width: 140px
+      height: 45px
+      &:hover
+        background-color: darken($dark-tan,10%)
+        border: 1px solid transparent
+      &.active
+        background-color: $light-tan
+        border: 1px solid transparent
+        &:hover
+          background-color: darken($light-tan,10%)
+          border: 1px solid transparent
+      span
+        display: inline-block
+        line-height: 45px
+        vertical-align: middle
+        &.long
+          line-height: 20px
+    a, a:visited, a:link
+      color: $brown
+
+.content
+  width: 100%
+  .well
+    background-color: $light-tan
+    box-shadow: none
+    -webkit-box-shadow: none
+    border: 0
+    border-radius: 10px
+    position: relative
+    &.gradient-border
+      padding: 0
+      margin: 0 0 20px 0
+      background-color: transparent
+      border-radius: 10px
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+      border-top: 1px solid $light-brown
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from($light-brown), to(transparent))
+      background-image: -webkit-linear-gradient($light-brown, transparent)
+      background-image: -moz-linear-gradient($light-brown, transparent), -moz-linear-gradient($light-brown, transparent)
+      background-image: -o-linear-gradient($light-brown, transparent), -o-linear-gradient($light-brown, transparent)
+      background-image: linear-gradient($light-brown, transparent), linear-gradient($light-brown, transparent)
+      -moz-background-size: 1px 100%
+      background-size: 1px 100%
+      background-position: 0 0, 100% 0
+      background-repeat: no-repeat 
+    .tab-image
+      img
+        height: auto
+        width: 100%
+    .well-body
+      margin: 2px 2px
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
+      background: -webkit-linear-gradient(#4a3429, transparent)
+      background: -o-linear-gradient(#4a3429n, transparent)
+      background: -moz-linear-gradient(#4a3429, transparent)
+      background: linear-gradient(#4a3429n, transparent) 
+      font-size: 11px
+      color: darken($light-tan,30%)
+      opacity: .6
+      height: 275px
+      padding: 65px 15px 0
+      text-align: center
+      a, a:link, a:visited
+        color: darken($light-tan,30%)
+    .banner-title
+      background-color: $brown
+      border-top: 1px dashed #4a3429
+      border-bottom: 1px dashed #4a3429
+      position: absolute
+      padding: 1px 0
+      text-align: center
+      font-family: $font-family-secondary
+      letter-spacing: -1px
+      font-size: 20px
+      top: 20px
+      left: 0
+      line-height: 30px
+      width: 100%
+    .read-more
+      position: absolute
+      bottom: 10px
+      left: 30%
+
+
+.footer
+  padding: 30px 0 0 0
+  border-top: 1px $brown dashed
+  background-color: $dark-tan
+  color: $brown
+  font-size: 12px
+  a, a:link, a:visited
+    font-weight: bold
+    padding: 0 10px 0 5px
+  ul
+    li
+      display: inline-block
+      &:after
+        content: "|"
+      &:last-child
+        &:after
+          content: ''
+
+/* did not have time to do a tablet view but would like to have */
+
+@media only screen and (max-width: 768px)
+  header
+    padding: 1px 15px 0 15px
+  .nav-tabs
+    display: none
+  .navbar
+    display: block
+    border-radius: 8px
+    background-color: $light-tan
+    color: $light-brown
+    .navbar-brand
+      color: $light-brown
+    .navbar-toggle
+      &:focus,&:hover
+        background-color: transparent
+    .navbar-toggle, .navbar-collapse
+      border-color: $dark-tan
+      .icon-bar
+        background-color: $dark-tan
+  .mobile-nav
+    padding: 0
+    ul
+      padding: 0
+      margin: 0
+    li
+      list-style-type: none
+      padding: 5px 15px
+      margin: 0
+      border-bottom: 1px solid $dark-tan
+      &:last-child
+        border-bottom: 0
+  .footer
+    ul
+      margin: 0
+      padding: 0
+  .content
+    .well
+      .read-more
+        left: 35%
